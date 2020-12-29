@@ -1,4 +1,12 @@
 ### LOGIN
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"18500290402",
+    "password":"888888"
+}
+
 ### EXTEND
 ### LOGOUT
 ### BLOCK
@@ -19,8 +27,9 @@ POST http://localhost:3000/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "email":"alpha@me.com",
-    "password":"888888"
+    "username":"15643638289",
+    "email":"max@me.com",
+    "password":"999999"
 }
 
 ### GET USER
@@ -66,9 +75,9 @@ Content-Type: application/json
 ### DELETE ROLE
 DELETE http://localhost:3000/roles/1 HTTP/1.1
 ### UPDATE ROLE USERS
-PATCH http://localhost:3000/roles/10/users HTTP/1.1
+PATCH http://localhost:3000/roles/1/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "roleId": [1,2,3]
+    "roleId": [1]
 }
